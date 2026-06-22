@@ -1,6 +1,9 @@
 .claude/
 node_modules/
 extract-svgs.js
+render-card.js
+package.json
+package-lock.json
 *.output
 .DS_Store
 Thumbs.db

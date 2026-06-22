@@ -209,6 +209,23 @@ html[lang="fa"] .price-card.featured::before{ transform:translateX(50%); }
 .price-card .btn{ margin-top:auto; width:100%; }
 .price-note{ text-align:center; color:var(--ink-400); font-size:.85rem; margin-top:22px; }
 
+/* premium custom-software banner (pulled out of the grid) */
+.price-banner{ margin-top:22px; background:var(--ink-900); border-radius:var(--radius-xl); padding:30px 34px;
+  display:flex; flex-wrap:wrap; gap:22px 30px; align-items:center; justify-content:space-between;
+  box-shadow:var(--shadow-soft); position:relative; overflow:hidden; }
+.price-banner::after{ content:""; position:absolute; width:360px; height:360px; border-radius:50%;
+  background:radial-gradient(closest-side,rgba(46,166,157,.30),transparent 70%); top:-150px; inset-inline-end:-110px; }
+.price-banner > *{ position:relative; z-index:1; }
+.pb-left{ flex:1 1 340px; }
+.pb-left h3{ color:#fff; margin:10px 0 6px; }
+.pb-left p{ color:var(--ink-300); margin:0; font-size:.95rem; max-width:52ch; }
+.pb-left .chip{ background:rgba(76,193,184,.16); color:#80d8cf; border-color:transparent; }
+.pb-right{ display:flex; flex-direction:column; align-items:flex-start; gap:8px; }
+.pb-right .amount{ font-size:1.9rem; font-weight:800; color:#fff; letter-spacing:-.02em; }
+.pb-right .amount small{ font-size:.8rem; color:var(--ink-300); font-weight:600; }
+.pb-right .pb-sub{ font-size:.82rem; color:var(--ink-300); }
+.pb-right .btn{ margin-top:6px; }
+
 /* ---------- process ---------- */
 .steps{ counter-reset:step; display:grid; gap:22px; }
 @media(min-width:880px){ .steps{ grid-template-columns:repeat(4,1fr);} }

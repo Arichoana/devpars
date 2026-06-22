@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face{ font-family:'Inter'; font-weight:100 900; font-display:block; src:url('../assets/fonts/inter-latin.woff2') format('woff2'); }
+  @font-face{ font-family:'Vazirmatn'; font-weight:100 900; font-display:block; src:url('../assets/fonts/vazirmatn-arabic.woff2') format('woff2'); }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ width:1050px; height:600px; }
+  body{ font-family:'Inter',system-ui,sans-serif; color:#13161b; display:flex; overflow:hidden; }
+
+  /* left brand panel */
+  .strip{ width:392px; flex:none; background:linear-gradient(150deg,#218880 0%,#2ea69d 48%,#4cc1b8 100%);
+    color:#fff; padding:54px 46px; position:relative; overflow:hidden; display:flex; flex-direction:column; }
+  .strip::after{ content:""; position:absolute; width:420px; height:420px; border-radius:50%;
+    background:radial-gradient(closest-side,rgba(255,255,255,.18),transparent 70%); bottom:-180px; left:-120px; }
+  .strip > *{ position:relative; z-index:1; }
+  .logo{ width:96px; height:96px; border-radius:26px; background:rgba(255,255,255,.16);
+    border:2px solid rgba(255,255,255,.35); display:flex; align-items:center; justify-content:center; }
+  .logo svg{ width:54px; height:54px; }
+  .strip .name{ font-size:58px; font-weight:800; letter-spacing:-1.5px; margin-top:34px; line-height:1; }
+  .strip .tag-en{ font-size:22px; font-weight:600; opacity:.92; margin-top:14px; letter-spacing:.3px; }
+  .strip .tag-fa{ font-size:30px; font-weight:700; margin-top:auto; direction:rtl; font-family:'Vazirmatn',sans-serif; }
+  .strip .remote{ font-size:21px; opacity:.9; margin-top:8px; direction:rtl; font-family:'Vazirmatn',sans-serif; }
+
+  /* right info */
+  .main{ flex:1; padding:54px 50px; display:flex; flex-direction:column; }
+  .person{ font-size:36px; font-weight:800; letter-spacing:-.5px; }
+  .role{ font-size:20px; color:#3f4754; margin-top:8px; font-weight:500; }
+  .role b{ color:#1d6e69; }
+  .langs{ margin-top:14px; font-size:18px; color:#727d8c; font-weight:600; }
+  .rule{ height:2px; background:#eef2f1; margin:26px 0; border:0; }
+
+  .rows{ display:flex; flex-direction:column; gap:18px; }
+  .r{ display:flex; align-items:center; gap:16px; font-size:23px; color:#333a44; font-weight:600; }
+  .r .ic{ width:46px; height:46px; flex:none; border-radius:12px; background:#eafbf8; color:#218880;
+    display:flex; align-items:center; justify-content:center; }
+  .r .ic svg{ width:24px; height:24px; }
+  .r .lbl{ direction:ltr; }
+
+  .bottom{ margin-top:auto; display:flex; align-items:flex-end; justify-content:space-between; gap:20px; }
+  .cta{ font-size:22px; font-weight:700; color:#194a47; max-width:360px; line-height:1.5; }
+  .cta span{ direction:rtl; display:block; font-family:'Vazirmatn',sans-serif; }
+  .qr{ width:150px; height:150px; flex:none; border:3px solid #eef2f1; border-radius:18px; padding:10px; background:#fff; }
+  .qr img{ width:100%; height:100%; display:block; }
+</style>
+</head>
+<body>
+  <div class="strip">
+    <span class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/></svg>
+    </span>
+    <div class="name">Dev<span style="opacity:.85">Pars</span></div>
+    <div class="tag-en">Software &amp; Webentwicklung</div>
+    <div class="tag-fa">صفر تا صد ریموت</div>
+    <div class="remote">۱۰۰٪ ریموت · سراسر آلمان</div>
+  </div>
+
+  <div class="main">
+    <div class="person">Arman N.</div>
+    <div class="role">Senior Full-Stack Entwickler · <b>C# / .NET · Web</b></div>
+    <div class="langs">Deutsch · English · فارسی</div>
+    <hr class="rule">
+
+    <div class="rows">
+      <div class="r"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span><span class="lbl">arichoana.github.io/devpars</span></div>
+      <div class="r"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span class="lbl">arman.nakhaie@gmail.com</span></div>
+      <div class="r"><span class="ic" style="background:#e7f8ee;color:#1a9e54"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.13c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.49-.75-2.93-1.21-4.81-4.18-4.96-4.37-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.02-2.42.27-.29.59-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.02.89 2.17.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.19-.28.37-.23.62-.14z"/></svg></span><span class="lbl">+49 157 338 67355 · WhatsApp</span></div>
+      <div class="r"><span class="ic" style="background:#e6f4fb;color:#1c8fcc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.3 18.6 19.1c-.25 1.1-.92 1.37-1.86.85l-5.14-3.79-2.48 2.39c-.27.27-.5.5-1.03.5l.37-5.2 9.5-8.58c.41-.37-.09-.57-.64-.2L5.07 12.6l-5.06-1.58c-1.1-.34-1.12-1.1.23-1.62L20.5 2.7c.92-.34 1.72.2 1.44 1.6z"/></svg></span><span class="lbl">Telegram: @DevPars_de</span></div>
+    </div>
+
+    <div class="bottom">
+      <div class="cta"><span>برای مشاوره‌ی رایگان پیام بدید</span>Kostenloses Angebot — einfach melden.</div>
+      <div class="qr"><img src="qr.png" alt="QR"></div>
+    </div>
+  </div>
+</body>
+</html>
