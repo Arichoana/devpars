@@ -2,6 +2,8 @@
 node_modules/
 extract-svgs.js
 render-card.js
+render-work.js
+card/work-*.png
 package.json
 package-lock.json
 *.output
