@@ -1,0 +1,6 @@
+.claude/
+node_modules/
+extract-svgs.js
+*.output
+.DS_Store
+Thumbs.db

@@ -1,0 +1,232 @@
+<svg viewBox="0 0 1200 860" width="1200" height="860" xmlns="http://www.w3.org/2000/svg" font-family="Inter, 'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfe0c4"/>
+      <stop offset="0.55" stop-color="#aecaa0"/>
+      <stop offset="1" stop-color="#8fae84"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.72" cy="0.28" r="0.55">
+      <stop offset="0" stop-color="#f4f1de" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#e8ecc9" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e8ecc9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="priceCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6f8f3"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#6E8B6B" flood-opacity="0.14"/>
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#3a4a37" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- page background -->
+  <rect x="0" y="0" width="1200" height="860" fill="#fbfaf5"/>
+
+  <!-- ============ STICKY NAV ============ -->
+  <rect x="0" y="0" width="1200" height="72" fill="#ffffff"/>
+  <line x1="0" y1="72" x2="1200" y2="72" stroke="#ebe7dd" stroke-width="1"/>
+  <!-- lotus mark -->
+  <g transform="translate(56,36)" stroke="#6E8B6B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 6 C-3 0 -3 -7 0 -12 C3 -7 3 0 0 6 Z"/>
+    <path d="M0 6 C-7 2 -11 -3 -12 -9 C-5 -8 -1 -3 0 6 Z"/>
+    <path d="M0 6 C7 2 11 -3 12 -9 C5 -8 1 -3 0 6 Z"/>
+    <path d="M-13 6 C-9 9 -3 9 0 7 C3 9 9 9 13 6" stroke-width="1.6"/>
+  </g>
+  <text x="82" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="21" fill="#3c4a39" font-style="italic">Studio Aram</text>
+
+  <!-- nav links -->
+  <g font-size="15" fill="#5a6357">
+    <text x="690" y="42">Kurse</text>
+    <text x="758" y="42" fill="#cdd3c8">·</text>
+    <text x="772" y="42">Preise</text>
+    <text x="838" y="42" fill="#cdd3c8">·</text>
+    <text x="852" y="42">Über uns</text>
+    <text x="940" y="42" fill="#cdd3c8">·</text>
+  </g>
+  <text x="958" y="42" font-size="15" fill="#6E8B6B" font-weight="600">Buchen</text>
+  <!-- language toggle -->
+  <rect x="1040" y="22" width="104" height="30" rx="15" fill="#f1f3ec" stroke="#dfe4d8" stroke-width="1"/>
+  <text x="1058" y="42" font-size="13" fill="#3c4a39" font-weight="600">DE</text>
+  <text x="1082" y="42" font-size="13" fill="#b7bdac">|</text>
+  <text x="1094" y="42" font-size="13" fill="#8a9382" font-family="Tahoma, sans-serif">فا</text>
+
+  <!-- ============ HERO ============ -->
+  <rect x="0" y="72" width="1200" height="300" fill="url(#heroGrad)"/>
+  <rect x="0" y="72" width="1200" height="300" fill="url(#sun)"/>
+  <!-- abstract calm shapes -->
+  <circle cx="980" cy="150" r="44" fill="#f4f1de" opacity="0.55"/>
+  <ellipse cx="1080" cy="330" rx="180" ry="60" fill="#7c9a72" opacity="0.30"/>
+  <ellipse cx="120" cy="350" rx="160" ry="50" fill="#7c9a72" opacity="0.25"/>
+  <!-- person in yoga pose line-icon -->
+  <g transform="translate(905,210)" stroke="#4a5c44" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <circle cx="0" cy="-34" r="9"/>
+    <path d="M0 -23 L0 6"/>
+    <path d="M0 -14 L-30 -2 M0 -14 L30 -2"/>
+    <path d="M0 6 L-26 20 L-44 20 M0 6 L26 20 L44 20"/>
+    <path d="M-46 22 L46 22" stroke-width="1.6" opacity="0.6"/>
+  </g>
+
+  <text x="80" y="200" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#33402f" font-style="italic">Finde deine Ruhe</text>
+  <text x="82" y="240" font-size="17" fill="#41513c">Yoga · Pilates · Achtsamkeit in Essen-Rüttenscheid</text>
+  <!-- sage button -->
+  <rect x="82" y="266" width="180" height="50" rx="25" fill="#6E8B6B" filter="url(#softShadow)"/>
+  <text x="172" y="297" font-size="16" fill="#ffffff" font-weight="600" text-anchor="middle">Kurs buchen</text>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <!-- Section labels -->
+  <text x="80" y="430" font-family="Georgia, serif" font-size="28" fill="#3c4a39">Stundenplan</text>
+  <text x="80" y="456" font-size="14" fill="#8a9382">Wöchentliche Kurse · Mo – Fr</text>
+
+  <!-- TIMETABLE GRID -->
+  <g>
+    <!-- column headers -->
+    <g font-size="13" fill="#6E8B6B" font-weight="700" text-anchor="middle">
+      <text x="148" y="486">MO</text>
+      <text x="296" y="486">DI</text>
+      <text x="444" y="486">MI</text>
+      <text x="592" y="486">DO</text>
+      <text x="740" y="486">FR</text>
+    </g>
+
+    <!-- MO -->
+    <g transform="translate(80,498)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#eef4e9" stroke="#dce6d4" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#3c4a39">Hatha Yoga</text>
+      <text x="14" y="46" font-size="12" fill="#62705c">09:00</text>
+      <rect x="14" y="56" width="86" height="18" rx="9" fill="#6E8B6B"/>
+      <text x="20" y="69" font-size="10.5" fill="#ffffff">6 Plätze frei</text>
+      <text x="14" y="86" font-size="11.5" fill="#6E8B6B" font-weight="600">Buchen →</text>
+    </g>
+    <!-- DI -->
+    <g transform="translate(228,498)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#f1f1ee" stroke="#e2e2dd" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#4a4a45">Pilates Mittel</text>
+      <text x="14" y="46" font-size="12" fill="#7a7a72">18:00</text>
+      <rect x="14" y="56" width="74" height="18" rx="9" fill="#c9c9c2"/>
+      <text x="20" y="69" font-size="10.5" fill="#4a4a45">ausgebucht</text>
+      <text x="14" y="86" font-size="11.5" fill="#8a8a80" font-weight="600">Warteliste</text>
+    </g>
+    <!-- MI -->
+    <g transform="translate(376,498)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#faf2de" stroke="#efe2c2" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#6b5a2e">Yin Yoga</text>
+      <text x="14" y="46" font-size="12" fill="#8a7a4e">20:00</text>
+      <rect x="14" y="56" width="86" height="18" rx="9" fill="#d9a441"/>
+      <text x="20" y="69" font-size="10.5" fill="#ffffff">2 Plätze frei</text>
+      <text x="14" y="86" font-size="11.5" fill="#b6862e" font-weight="600">Buchen →</text>
+    </g>
+    <!-- DO -->
+    <g transform="translate(524,498)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#eef4e9" stroke="#dce6d4" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#3c4a39">Vinyasa Flow</text>
+      <text x="14" y="46" font-size="12" fill="#62705c">07:30</text>
+      <rect x="14" y="56" width="86" height="18" rx="9" fill="#6E8B6B"/>
+      <text x="20" y="69" font-size="10.5" fill="#ffffff">4 Plätze frei</text>
+      <text x="14" y="86" font-size="11.5" fill="#6E8B6B" font-weight="600">Buchen →</text>
+    </g>
+    <!-- FR -->
+    <g transform="translate(672,498)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#faf2de" stroke="#efe2c2" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#6b5a2e">Yin Yoga</text>
+      <text x="14" y="46" font-size="12" fill="#8a7a4e">20:00</text>
+      <rect x="14" y="56" width="86" height="18" rx="9" fill="#d9a441"/>
+      <text x="20" y="69" font-size="10.5" fill="#ffffff">2 Plätze frei</text>
+      <text x="14" y="86" font-size="11.5" fill="#b6862e" font-weight="600">Buchen →</text>
+    </g>
+
+    <!-- second row -->
+    <g transform="translate(80,602)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#f1f1ee" stroke="#e2e2dd" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#4a4a45">Pilates Mittel</text>
+      <text x="14" y="46" font-size="12" fill="#7a7a72">18:00</text>
+      <rect x="14" y="56" width="74" height="18" rx="9" fill="#c9c9c2"/>
+      <text x="20" y="69" font-size="10.5" fill="#4a4a45">ausgebucht</text>
+      <text x="14" y="86" font-size="11.5" fill="#8a8a80" font-weight="600">Warteliste</text>
+    </g>
+    <g transform="translate(228,602)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#eef4e9" stroke="#dce6d4" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#3c4a39">Hatha Yoga</text>
+      <text x="14" y="46" font-size="12" fill="#62705c">09:00</text>
+      <rect x="14" y="56" width="86" height="18" rx="9" fill="#6E8B6B"/>
+      <text x="20" y="69" font-size="10.5" fill="#ffffff">6 Plätze frei</text>
+      <text x="14" y="86" font-size="11.5" fill="#6E8B6B" font-weight="600">Buchen →</text>
+    </g>
+    <g transform="translate(376,602)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#eef4e9" stroke="#dce6d4" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#3c4a39">Power Yoga</text>
+      <text x="14" y="46" font-size="12" fill="#62705c">19:00</text>
+      <rect x="14" y="56" width="86" height="18" rx="9" fill="#6E8B6B"/>
+      <text x="20" y="69" font-size="10.5" fill="#ffffff">3 Plätze frei</text>
+      <text x="14" y="86" font-size="11.5" fill="#6E8B6B" font-weight="600">Buchen →</text>
+    </g>
+    <g transform="translate(524,602)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#faf2de" stroke="#efe2c2" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#6b5a2e">Yin Yoga</text>
+      <text x="14" y="46" font-size="12" fill="#8a7a4e">20:00</text>
+      <rect x="14" y="56" width="86" height="18" rx="9" fill="#d9a441"/>
+      <text x="20" y="69" font-size="10.5" fill="#ffffff">2 Plätze frei</text>
+      <text x="14" y="86" font-size="11.5" fill="#b6862e" font-weight="600">Buchen →</text>
+    </g>
+    <g transform="translate(672,602)">
+      <rect x="0" y="0" width="136" height="92" rx="12" fill="#eef4e9" stroke="#dce6d4" stroke-width="1"/>
+      <text x="14" y="26" font-size="13" font-weight="700" fill="#3c4a39">Hatha Yoga</text>
+      <text x="14" y="46" font-size="12" fill="#62705c">10:30</text>
+      <rect x="14" y="56" width="86" height="18" rx="9" fill="#6E8B6B"/>
+      <text x="20" y="69" font-size="10.5" fill="#ffffff">5 Plätze frei</text>
+      <text x="14" y="86" font-size="11.5" fill="#6E8B6B" font-weight="600">Buchen →</text>
+    </g>
+  </g>
+
+  <!-- ============ PRICING COLUMN ============ -->
+  <text x="852" y="430" font-family="Georgia, serif" font-size="28" fill="#3c4a39">Preise</text>
+  <text x="852" y="456" font-size="14" fill="#8a9382">Flexibel &amp; ohne Bindung</text>
+
+  <!-- Probestunde -->
+  <g filter="url(#cardShadow)">
+    <rect x="852" y="474" width="268" height="64" rx="14" fill="url(#priceCard)" stroke="#e6ebe0" stroke-width="1"/>
+  </g>
+  <text x="872" y="503" font-size="15" font-weight="700" fill="#3c4a39">Probestunde</text>
+  <text x="872" y="523" font-size="12.5" fill="#8a9382">Einmalig zum Kennenlernen</text>
+  <text x="1100" y="513" font-size="22" font-family="Georgia, serif" fill="#6E8B6B" text-anchor="end">10 €</text>
+
+  <!-- 10er-Karte -->
+  <g filter="url(#cardShadow)">
+    <rect x="852" y="550" width="268" height="64" rx="14" fill="url(#priceCard)" stroke="#e6ebe0" stroke-width="1"/>
+  </g>
+  <text x="872" y="579" font-size="15" font-weight="700" fill="#3c4a39">10er-Karte</text>
+  <text x="872" y="599" font-size="12.5" fill="#8a9382">12 Wochen gültig</text>
+  <text x="1100" y="589" font-size="22" font-family="Georgia, serif" fill="#6E8B6B" text-anchor="end">120 €</text>
+
+  <!-- Flatrate highlighted -->
+  <g filter="url(#cardShadow)">
+    <rect x="852" y="626" width="268" height="72" rx="14" fill="#6E8B6B"/>
+  </g>
+  <rect x="852" y="626" width="268" height="72" rx="14" fill="none" stroke="#5d785a" stroke-width="1"/>
+  <text x="872" y="657" font-size="15" font-weight="700" fill="#ffffff">Flatrate / Monat</text>
+  <text x="872" y="677" font-size="12.5" fill="#dce6d4">Unbegrenzt alle Kurse</text>
+  <text x="1100" y="666" font-size="24" font-family="Georgia, serif" fill="#ffffff" text-anchor="end">79 €</text>
+  <rect x="872" y="685" width="60" height="6" rx="3" fill="#9fbb96" opacity="0"/>
+
+  <!-- ============ PERSIAN RTL BAND ============ -->
+  <rect x="0" y="722" width="1200" height="78" fill="#4d5f47"/>
+  <g transform="translate(1150,762)" stroke="#aebfa6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7">
+    <path d="M0 4 C-2 0 -2 -5 0 -8 C2 -5 2 0 0 4 Z"/>
+    <path d="M0 4 C-5 1 -8 -2 -9 -6 C-4 -6 -1 -2 0 4 Z"/>
+    <path d="M0 4 C5 1 8 -2 9 -6 C4 -6 1 -2 0 4 Z"/>
+  </g>
+  <text x="1124" y="757" font-family="Tahoma, sans-serif" font-size="18" fill="#f3f6ef" text-anchor="end" font-weight="bold">کلاس‌های یوگا به زبان فارسی</text>
+  <text x="1124" y="782" font-family="Tahoma, sans-serif" font-size="13.5" fill="#cdd9c6" text-anchor="end">برای جامعه‌ی ایرانی اِسن — همراه با مربی فارسی‌زبان</text>
+
+  <!-- ============ FOOTER ============ -->
+  <rect x="0" y="800" width="1200" height="60" fill="#f3f2ec"/>
+  <text x="80" y="828" font-size="13" fill="#6a7264">Studio Aram · Rüttenscheider Str. 142 · 45131 Essen · hallo@studio-aram.de</text>
+  <g font-size="13" fill="#6E8B6B">
+    <text x="1010" y="828">Impressum</text>
+    <text x="1088" y="828" fill="#c3c9bb">·</text>
+    <text x="1100" y="828">Datenschutz</text>
+  </g>
+  <text x="80" y="848" font-size="11.5" fill="#a7ad9f">© 2026 Studio Aram — Yoga &amp; Pilates in Essen-Rüttenscheid</text>
+</svg>

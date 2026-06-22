@@ -1,0 +1,188 @@
+<svg viewBox="0 0 1200 860" width="1200" height="860" xmlns="http://www.w3.org/2000/svg" font-family="Inter, 'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a2017"/>
+      <stop offset="0.5" stop-color="#5c2f1c"/>
+      <stop offset="1" stop-color="#2a1610"/>
+    </linearGradient>
+    <radialGradient id="heroGlow" cx="0.5" cy="0.42" r="0.7">
+      <stop offset="0" stop-color="#7a3a1f" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2a1610" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heroOverlay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c0f0a" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#1c0f0a" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#1c0f0a" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="dish1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c98f"/>
+      <stop offset="1" stop-color="#c98a4a"/>
+    </linearGradient>
+    <linearGradient id="dish2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d97b4e"/>
+      <stop offset="1" stop-color="#9c3b22"/>
+    </linearGradient>
+    <linearGradient id="resvGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9c3f23"/>
+      <stop offset="1" stop-color="#6e2a18"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#3a2017" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- page background -->
+  <rect x="0" y="0" width="1200" height="860" fill="#fbf4e9"/>
+
+  <!-- ============ HERO ============ -->
+  <rect x="0" y="0" width="1200" height="360" fill="url(#heroGrad)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#heroGlow)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#heroOverlay)"/>
+
+  <!-- faint line-icon motif: wine glass + pasta -->
+  <g stroke="#e9d9b8" stroke-width="2" fill="none" opacity="0.10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- wine glass left -->
+    <path d="M120 70 h44 c0 26 -10 40 -22 40 c-12 0 -22 -14 -22 -40 z"/>
+    <path d="M142 110 v34"/>
+    <path d="M126 146 h32"/>
+    <!-- fork right -->
+    <path d="M1060 64 v60 M1048 64 v22 M1072 64 v22 M1048 86 h24"/>
+    <path d="M1096 64 c12 0 12 30 0 30 v30"/>
+    <!-- swirl pasta -->
+    <circle cx="1010" cy="300" r="26"/>
+    <path d="M1010 282 a18 18 0 1 1 -12 31"/>
+  </g>
+
+  <!-- top nav -->
+  <text x="60" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-style="italic" fill="#f4e7cf" letter-spacing="0.5">Trattoria Bella Vista</text>
+
+  <g font-size="15" fill="#f0e3c9" letter-spacing="0.3">
+    <text x="620" y="54">Start</text>
+    <text x="680" y="54" opacity="0.55">·</text>
+    <text x="695" y="54">Speisekarte</text>
+    <text x="795" y="54" opacity="0.55">·</text>
+    <text x="810" y="54">Über uns</text>
+    <text x="888" y="54" opacity="0.55">·</text>
+    <text x="903" y="54">Reservierung</text>
+    <text x="1010" y="54" opacity="0.55">·</text>
+    <text x="1025" y="54">Kontakt</text>
+  </g>
+  <g transform="translate(1055,78)">
+    <path d="M0 2 c0 -1 1 -2 2 -2 h4 c1 0 2 1 2 2 l1 5 c0 1 0 2 -1 2 l-2 1 c1 3 3 5 6 6 l1 -2 c1 -1 1 -1 2 -1 l5 1 c1 0 2 1 2 2 v4 c0 1 -1 2 -2 2 C9 22 0 13 0 2 z" fill="none" stroke="#d7a86a" stroke-width="1.6"/>
+  </g>
+  <text x="1075" y="92" font-size="15" fill="#e8c98f" font-weight="600">0201 / 123 456</text>
+
+  <!-- hero center -->
+  <text x="600" y="180" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="44" fill="#f6ecd5" letter-spacing="0.5">Authentische italienische Küche</text>
+  <text x="600" y="222" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" fill="#e3c997">im Herzen von Essen</text>
+
+  <!-- hero buttons -->
+  <g filter="url(#soft)">
+    <rect x="446" y="262" width="180" height="50" rx="10" fill="#C0532B"/>
+  </g>
+  <text x="536" y="293" text-anchor="middle" font-size="16" fill="#fef3e3" font-weight="600">Tisch reservieren</text>
+
+  <rect x="642" y="262" width="200" height="50" rx="10" fill="none" stroke="#f0e3c9" stroke-width="1.6"/>
+  <text x="742" y="293" text-anchor="middle" font-size="16" fill="#f0e3c9" font-weight="500">Speisekarte ansehen</text>
+
+  <!-- ============ ÖFFNUNGSZEITEN STRIP ============ -->
+  <g transform="translate(0,360)">
+    <rect x="0" y="0" width="1200" height="120" fill="#fbf4e9"/>
+    <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+      <!-- col 1 -->
+      <g transform="translate(260,0)">
+        <g stroke="#C0532B" stroke-width="1.8" fill="none" stroke-linecap="round">
+          <circle cx="0" cy="40" r="14"/>
+          <path d="M0 32 v8 l6 4"/>
+        </g>
+        <text x="0" y="78" font-size="13" letter-spacing="2" fill="#9c6b4a" font-family="Inter, sans-serif">MO–FR</text>
+        <text x="0" y="100" font-size="18" fill="#3a2017">12–22 Uhr</text>
+      </g>
+      <!-- col 2 -->
+      <g transform="translate(600,0)">
+        <g stroke="#C0532B" stroke-width="1.8" fill="none" stroke-linecap="round">
+          <circle cx="0" cy="40" r="14"/>
+          <path d="M0 32 v8 l6 4"/>
+        </g>
+        <text x="0" y="78" font-size="13" letter-spacing="2" fill="#9c6b4a" font-family="Inter, sans-serif">SAMSTAG</text>
+        <text x="0" y="100" font-size="18" fill="#3a2017">17–23 Uhr</text>
+      </g>
+      <!-- col 3 -->
+      <g transform="translate(940,0)">
+        <g stroke="#C0532B" stroke-width="1.8" fill="none" stroke-linecap="round">
+          <circle cx="0" cy="40" r="14"/>
+          <path d="M-9 49 l18 -18"/>
+        </g>
+        <text x="0" y="78" font-size="13" letter-spacing="2" fill="#9c6b4a" font-family="Inter, sans-serif">SONNTAG</text>
+        <text x="0" y="100" font-size="18" fill="#3a2017">Ruhetag</text>
+      </g>
+    </g>
+    <line x1="430" y1="30" x2="430" y2="90" stroke="#e6d6bd" stroke-width="1"/>
+    <line x1="770" y1="30" x2="770" y2="90" stroke="#e6d6bd" stroke-width="1"/>
+  </g>
+
+  <!-- ============ SPEISEKARTE ============ -->
+  <g transform="translate(0,500)">
+    <text x="600" y="34" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#3a2017">Unsere Speisekarte</text>
+    <line x1="560" y1="48" x2="640" y2="48" stroke="#C0532B" stroke-width="2"/>
+
+    <!-- card 1 -->
+    <g transform="translate(330,72)" filter="url(#soft)">
+      <rect x="0" y="0" width="240" height="180" rx="14" fill="#ffffff"/>
+    </g>
+    <g transform="translate(330,72)">
+      <rect x="0" y="0" width="240" height="96" rx="14" fill="url(#dish1)"/>
+      <rect x="0" y="40" width="240" height="56" fill="url(#dish1)"/>
+      <g stroke="#7a4a22" stroke-width="2" fill="none" opacity="0.55" stroke-linecap="round" stroke-linejoin="round" transform="translate(120,48)">
+        <ellipse cx="0" cy="0" rx="34" ry="20"/>
+        <path d="M-18 -2 q18 -14 36 0 M-18 4 q18 -14 36 0"/>
+      </g>
+      <text x="20" y="124" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3a2017">Tagliatelle al Tartufo</text>
+      <text x="20" y="148" font-size="14" font-style="italic" fill="#a07b5a">enthält Gluten</text>
+      <text x="220" y="148" text-anchor="end" font-size="18" font-weight="700" fill="#C0532B">16,90 €</text>
+    </g>
+
+    <!-- card 2 -->
+    <g transform="translate(630,72)" filter="url(#soft)">
+      <rect x="0" y="0" width="240" height="180" rx="14" fill="#ffffff"/>
+    </g>
+    <g transform="translate(630,72)">
+      <rect x="0" y="0" width="240" height="96" rx="14" fill="url(#dish2)"/>
+      <rect x="0" y="40" width="240" height="56" fill="url(#dish2)"/>
+      <g stroke="#fbe6cf" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round" stroke-linejoin="round" transform="translate(120,48)">
+        <circle cx="0" cy="0" r="22"/>
+        <circle cx="-9" cy="-6" r="3"/>
+        <circle cx="8" cy="-3" r="3"/>
+        <circle cx="-2" cy="9" r="3"/>
+        <circle cx="10" cy="8" r="3"/>
+      </g>
+      <text x="20" y="124" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3a2017">Pizza Diavola</text>
+      <text x="20" y="148" font-size="14" font-style="italic" fill="#a07b5a">enthält Gluten</text>
+      <text x="220" y="148" text-anchor="end" font-size="18" font-weight="700" fill="#C0532B">12,50 €</text>
+    </g>
+  </g>
+
+  <!-- ============ RESERVATION PANEL ============ -->
+  <g transform="translate(0,712)">
+    <rect x="0" y="0" width="1200" height="148" fill="url(#resvGrad)"/>
+    <text x="60" y="50" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#f6ecd5">Tisch reservieren</text>
+    <text x="60" y="76" font-size="14" fill="#e8c8b3">Reservieren Sie ganz einfach online Ihren Tisch.</text>
+
+    <!-- inline form -->
+    <g>
+      <rect x="60" y="92" width="150" height="40" rx="8" fill="#fbf4e9"/>
+      <text x="76" y="117" font-size="13" fill="#9c7a64">Name</text>
+      <rect x="222" y="92" width="130" height="40" rx="8" fill="#fbf4e9"/>
+      <text x="238" y="117" font-size="13" fill="#9c7a64">Datum</text>
+      <rect x="364" y="92" width="120" height="40" rx="8" fill="#fbf4e9"/>
+      <text x="380" y="117" font-size="13" fill="#9c7a64">Uhrzeit</text>
+      <rect x="496" y="92" width="120" height="40" rx="8" fill="#fbf4e9"/>
+      <text x="512" y="117" font-size="13" fill="#9c7a64">Personen</text>
+    </g>
+    <rect x="636" y="92" width="170" height="40" rx="8" fill="#f6ecd5"/>
+    <text x="721" y="117" text-anchor="middle" font-size="15" font-weight="600" fill="#9c3f23">Jetzt reservieren</text>
+
+    <!-- footer line -->
+    <text x="1140" y="122" text-anchor="end" font-size="13" fill="#e8c8b3">Rüttenscheider Str. 12, 45128 Essen · Impressum · Datenschutz</text>
+  </g>
+</svg>
