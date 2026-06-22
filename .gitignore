@@ -9,3 +9,6 @@ package-lock.json
 *.output
 .DS_Store
 Thumbs.db
+
+render-avatar.js
+extract-avatars.js
