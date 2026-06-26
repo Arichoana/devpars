@@ -10,9 +10,8 @@ const cheerio = require('cheerio');
 
 const ROOT = __dirname;
 const SRC = path.join(ROOT, 'src', 'site.html');
-// ⚠️ When devpars.de goes live: set BASE = 'https://devpars.de' and re-run `node build.js`.
-// (All absolute canonical/hreflang/OG/JSON-LD URLs are derived from BASE.)
-const BASE = 'https://arichoana.github.io/devpars';
+// Live domain (registered 2026-06-26). All absolute canonical/hreflang/OG/JSON-LD URLs derive from BASE.
+const BASE = 'https://devpars.de';
 const PHONE = '+4915750724109';
 const WA = '4915750724109';
 const FORM_ENDPOINT = 'https://formsubmit.co/arman.nakhaie@gmail.com';

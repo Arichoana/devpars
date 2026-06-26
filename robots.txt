@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /danke.html
 
-Sitemap: https://arichoana.github.io/devpars/sitemap.xml
+Sitemap: https://devpars.de/sitemap.xml
