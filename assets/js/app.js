@@ -74,8 +74,8 @@
   }
 
   function start() {
-    applyLang(pickInitial());
-    initLangSwitch();
+    // Language is now set per-page at build time (separate /, /en/, /fa/ URLs).
+    // No client-side language swapping — it would override the correct page lang/dir.
     initMobileMenu();
     initReveal();
     initSmoothAnchors();

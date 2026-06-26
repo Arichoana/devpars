@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://arichoana.github.io/devpars/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://arichoana.github.io/devpars/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arichoana.github.io/devpars/en/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://arichoana.github.io/devpars/fa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arichoana.github.io/devpars/"/>
+  </url>
+  <url>
+    <loc>https://arichoana.github.io/devpars/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://arichoana.github.io/devpars/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arichoana.github.io/devpars/en/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://arichoana.github.io/devpars/fa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arichoana.github.io/devpars/"/>
+  </url>
+  <url>
+    <loc>https://arichoana.github.io/devpars/fa/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://arichoana.github.io/devpars/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arichoana.github.io/devpars/en/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://arichoana.github.io/devpars/fa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arichoana.github.io/devpars/"/>
+  </url>
+</urlset>

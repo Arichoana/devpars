@@ -12,3 +12,25 @@ Thumbs.db
 
 render-avatar.js
 extract-avatars.js
+
+STRATEGY.md
+imgview.html
+
+render-og.js
+render-check.js
+og.html
+check-*.png
+
+# card/ holds private scratch files — publish ONLY the legit card/site assets
+card/*
+!card/card.html
+!card/card.png
+!card/qr.png
+!card/visitenkarte.html
+!card/visitenkarte.png
+!card/visitenkarte-de.html
+!card/visitenkarte-de.png
+!card/work-restaurant.png
+!card/work-yoga.png
+!card/work-shop.png
+!card/work-plumber.png
