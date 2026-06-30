@@ -196,6 +196,74 @@ for (const entry of content) {
   console.log('built', slug + '/index.html');
 }
 
+// ---- blog index ----
+const articles = content.filter((e) => e && e.page && e.page.slug && e.page.slug.startsWith('blog/'));
+if (articles.length) {
+  const cards = articles.map((e) => {
+    const u = '/' + e.page.slug.replace(/^\/+|\/+$/g, '') + '/';
+    return `<a class="work-card reveal" href="${u}" style="display:block;text-decoration:none">
+      <div class="work-body"><span class="clienttype">Magazin</span><h3>${esc(e.page.h1)}</h3>
+      <p>${esc(e.page.metaDesc)}</p>
+      <p class="work-result">${check}<span>Weiterlesen</span></p></div></a>`;
+  }).join('\n');
+  const blogPage = `<!DOCTYPE html>
+<html lang="de" dir="ltr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magazin – Ratgeber zu Webseiten &amp; Software | DevPars</title>
+<meta name="description" content="Ehrliche Ratgeber rund um Webseiten, Kosten und Softwareentwicklung – vom Senior-Entwickler aus Essen.">
+<meta name="theme-color" content="#2ea69d">
+<link rel="canonical" href="${BASE}/blog/">
+<meta property="og:title" content="Magazin | DevPars"><meta property="og:description" content="Ehrliche Ratgeber rund um Webseiten, Kosten und Softwareentwicklung."><meta property="og:url" content="${BASE}/blog/"><meta property="og:image" content="${BASE}/assets/img/og.png">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css"><link rel="stylesheet" href="/assets/css/styles.css">
+</head><body>
+${header()}
+<main id="top">
+<section class="hero"><span class="hero-blob b1"></span><span class="hero-blob b2"></span>
+  <div class="container" style="position:relative;z-index:1;max-width:820px">
+    <nav class="crumbs reveal"><a href="/">Start</a> <span>›</span> <span>Magazin</span></nav>
+    <h1 class="reveal" style="margin-top:10px">Magazin</h1>
+    <p class="lead reveal">Ehrliche Ratgeber rund um Webseiten, Kosten und Software – ohne Marketing-Geschwätz, vom Entwickler erklärt.</p>
+  </div></section>
+<section class="section"><div class="container"><div class="grid g-2">${cards}</div></div></section>
+</main>
+${footer()}
+<script src="/assets/js/app.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>`;
+  fs.mkdirSync(path.join(ROOT, 'blog'), { recursive: true });
+  fs.writeFileSync(path.join(ROOT, 'blog', 'index.html'), blogPage, 'utf8');
+  landingUrls.push(BASE + '/blog/');
+  console.log('built blog/index.html');
+}
+
+// ---- custom 404 ----
+const notFound = `<!DOCTYPE html>
+<html lang="de" dir="ltr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seite nicht gefunden (404) | DevPars</title>
+<meta name="robots" content="noindex,follow"><meta name="theme-color" content="#2ea69d">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css"><link rel="stylesheet" href="/assets/css/styles.css">
+</head><body>
+${header()}
+<main id="top"><section class="section" style="min-height:52vh"><div class="container" style="max-width:560px;text-align:center">
+  <p class="eyebrow" style="justify-content:center">Fehler 404</p>
+  <h1>Diese Seite gibt es leider nicht.</h1>
+  <p class="lead">Der Link ist veraltet oder enthält einen Tippfehler. Von hier kommen Sie weiter:</p>
+  <div class="hero-cta" style="justify-content:center;margin-top:20px">
+    <a href="/" class="btn btn-primary btn-lg">Zur Startseite</a>
+    <a href="/#contact" class="btn btn-outline btn-lg">Projekt anfragen</a>
+  </div>
+</div></section></main>
+${footer()}
+<script src="/assets/js/app.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>`;
+fs.writeFileSync(path.join(ROOT, '404.html'), notFound, 'utf8');
+console.log('built 404.html');
+
 // ---- full sitemap (homepage de/en/fa + landing) ----
 const homeAlt = `    <xhtml:link rel="alternate" hreflang="de" href="${BASE}/"/>\n    <xhtml:link rel="alternate" hreflang="en" href="${BASE}/en/"/>\n    <xhtml:link rel="alternate" hreflang="fa" href="${BASE}/fa/"/>\n    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE}/"/>`;
 let urls = [`${BASE}/`, `${BASE}/en/`, `${BASE}/fa/`].map((u) => `  <url>\n    <loc>${u}</loc>\n${homeAlt}\n  </url>`);
