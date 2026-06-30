@@ -324,3 +324,18 @@ html[lang="fa"] [data-lang]:not([data-lang="fa"]){ display:none !important; }
 @media(prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } *{ scroll-behavior:auto; } }
 .floaty{ animation:floaty 5s ease-in-out infinite; }
 @keyframes floaty{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-8px);} }
+
+/* ---------- landing / article pages ---------- */
+.crumbs{ font-size:.82rem; color:var(--ink-400); display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.crumbs a{ color:var(--brand-600); }
+.crumbs a:hover{ text-decoration:underline; }
+.hero .lead p{ font-size:clamp(1.04rem,1.6vw,1.2rem); color:var(--ink-500); margin:0 0 .7em; }
+.lp-body{ color:var(--ink-600); font-size:1.02rem; line-height:1.85; }
+.lp-body p{ margin:0 0 1.1em; }
+.lp-body ul{ margin:0 0 1.2em; padding-inline-start:1.25em; list-style:disc; }
+.lp-body li{ margin:.4em 0; }
+.lp-body strong{ color:var(--ink-800); font-weight:600; }
+.lp-body a{ color:var(--brand-700); text-decoration:underline; text-underline-offset:3px; }
+.lp-body a:hover{ color:var(--brand-800); }
+.section-sm h2{ margin-bottom:.55em; }
+html[lang="fa"] .lp-body, [dir="rtl"] .lp-body{ text-align:right; }
