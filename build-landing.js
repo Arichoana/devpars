@@ -94,6 +94,45 @@ function jsonLd(p, url, isArticle, crumbName) {
   return JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
 }
 
+// short nav labels + topic-cluster relations (internal-link SEO)
+const NAV = {
+  'webseite-erstellen-lassen-essen': 'Webseite erstellen lassen',
+  'webseite-fuer-restaurants': 'Webseite für Restaurants',
+  'webseite-fuer-handwerker': 'Webseite für Handwerker',
+  'online-shop-erstellen-lassen': 'Online-Shop erstellen lassen',
+  'online-terminbuchung': 'Online-Terminbuchung',
+  'individuelle-software-entwickeln-lassen': 'Individuelle Software',
+  'persische-webseite': 'Zweisprachige Webseite (DE-FA)',
+  'blog/was-kostet-eine-website': 'Was kostet eine Website?',
+  'blog/freelancer-oder-agentur': 'Freelancer oder Agentur?',
+};
+const RELATED = {
+  'webseite-erstellen-lassen-essen': ['webseite-fuer-restaurants', 'webseite-fuer-handwerker', 'online-shop-erstellen-lassen', 'blog/was-kostet-eine-website'],
+  'webseite-fuer-restaurants': ['online-terminbuchung', 'webseite-fuer-handwerker', 'webseite-erstellen-lassen-essen', 'blog/was-kostet-eine-website'],
+  'webseite-fuer-handwerker': ['online-terminbuchung', 'webseite-fuer-restaurants', 'webseite-erstellen-lassen-essen', 'blog/was-kostet-eine-website'],
+  'online-shop-erstellen-lassen': ['individuelle-software-entwickeln-lassen', 'online-terminbuchung', 'webseite-erstellen-lassen-essen', 'blog/was-kostet-eine-website'],
+  'online-terminbuchung': ['individuelle-software-entwickeln-lassen', 'webseite-fuer-restaurants', 'webseite-fuer-handwerker', 'webseite-erstellen-lassen-essen'],
+  'individuelle-software-entwickeln-lassen': ['online-shop-erstellen-lassen', 'online-terminbuchung', 'webseite-erstellen-lassen-essen', 'blog/freelancer-oder-agentur'],
+  'persische-webseite': ['webseite-erstellen-lassen-essen', 'webseite-fuer-restaurants', 'online-shop-erstellen-lassen', 'blog/was-kostet-eine-website'],
+  'blog/was-kostet-eine-website': ['blog/freelancer-oder-agentur', 'webseite-erstellen-lassen-essen', 'online-shop-erstellen-lassen', 'individuelle-software-entwickeln-lassen'],
+  'blog/freelancer-oder-agentur': ['blog/was-kostet-eine-website', 'individuelle-software-entwickeln-lassen', 'webseite-erstellen-lassen-essen', 'online-shop-erstellen-lassen'],
+};
+const arrowSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+function related(slug) {
+  const rels = (RELATED[slug] || []).filter((s) => NAV[s] && s !== slug);
+  if (!rels.length) return '';
+  const cards = rels.map((s) => `<a class="rel-card reveal" href="/${s}/"><span class="ico" aria-hidden="true">${logoSvg}</span><span>${esc(NAV[s])}</span><span class="arr" aria-hidden="true">${arrowSvg}</span></a>`).join('\n      ');
+  return `
+  <section class="section related">
+    <div class="container" style="max-width:900px">
+      <div class="section-head reveal" style="margin-bottom:22px"><span class="eyebrow">Mehr von DevPars</span><h2 style="margin:6px 0 0">Das könnte Sie auch interessieren</h2></div>
+      <div class="rel-grid">
+      ${cards}
+      </div>
+    </div>
+  </section>`;
+}
+
 function pageHtml(entry) {
   const p = entry.page;
   const isArticle = p.slug.startsWith('blog/');
@@ -163,6 +202,7 @@ ${header()}
 </section>
 ${sections}
 ${faq}
+${related(p.slug)}
 <section class="section">
   <div class="container">
     <div class="contact reveal">

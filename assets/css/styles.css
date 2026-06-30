@@ -339,3 +339,18 @@ html[lang="fa"] [data-lang]:not([data-lang="fa"]){ display:none !important; }
 .lp-body a:hover{ color:var(--brand-800); }
 .section-sm h2{ margin-bottom:.55em; }
 html[lang="fa"] .lp-body, [dir="rtl"] .lp-body{ text-align:right; }
+
+/* related pages (topic-cluster interlinking) */
+.related{ border-top:1px solid var(--ink-100); }
+.related .eyebrow{ color:var(--brand-600); }
+.rel-grid{ display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); margin-top:8px; }
+.rel-card{ display:flex; align-items:center; gap:12px; padding:15px 18px; background:#fff; border:1px solid var(--ink-100);
+  border-radius:var(--radius-lg); box-shadow:var(--shadow-card); color:var(--ink-700); font-weight:600; font-size:.95rem;
+  transition:border-color .18s, transform .18s, box-shadow .18s; }
+.rel-card:hover{ border-color:var(--brand-200); transform:translateY(-2px); box-shadow:var(--shadow-lg); color:var(--brand-700); }
+.rel-card .ico{ width:30px; height:30px; flex:none; display:grid; place-items:center; border-radius:9px;
+  background:var(--brand-50); color:var(--brand-600); }
+.rel-card .ico svg{ width:17px; height:17px; }
+.rel-card .arr{ margin-inline-start:auto; color:var(--ink-300); transition:color .18s, transform .18s; }
+.rel-card:hover .arr{ color:var(--brand-500); transform:translateX(3px); }
+[dir="rtl"] .rel-card:hover .arr{ transform:translateX(-3px); }
