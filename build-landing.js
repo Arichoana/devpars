@@ -84,9 +84,12 @@ function jsonLd(p, url, isArticle, crumbName) {
       provider: { '@id': BASE + '/#devpars' }, areaServed: [{ '@type': 'Country', name: 'Germany' }, { '@type': 'City', name: 'Essen' }, { '@type': 'AdministrativeArea', name: 'Ruhrgebiet' }],
       availableChannel: { '@type': 'ServiceChannel', serviceUrl: BASE + '/#contact' } });
   }
+  const catUrl = isArticle ? BASE + '/blog/' : BASE + '/#services';
+  const leafName = NAV[p.slug] || p.h1;
   graph.push({ '@type': 'BreadcrumbList', '@id': url + '#bc', itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Start', item: BASE + '/' },
-    { '@type': 'ListItem', position: 2, name: crumbName, item: url },
+    { '@type': 'ListItem', position: 2, name: crumbName, item: catUrl },
+    { '@type': 'ListItem', position: 3, name: leafName, item: url },
   ] });
   if (p.faq && p.faq.length) {
     graph.push({ '@type': 'FAQPage', '@id': url + '#faq', mainEntity: p.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
@@ -139,6 +142,8 @@ function pageHtml(entry) {
   const url = BASE + '/' + p.slug + '/';
   const crumbName = isArticle ? 'Magazin' : 'Leistungen';
   const crumbLabel = isArticle ? 'Magazin' : 'Leistungen';
+  const crumbHref = isArticle ? '/blog/' : '/#services';
+  const crumbLeaf = NAV[p.slug] || p.h1;
 
   const sections = p.sections.map((s) => `
   <section class="section-sm">
@@ -191,7 +196,7 @@ ${header()}
   <span class="hero-blob b1"></span>
   <span class="hero-blob b2"></span>
   <div class="container" style="position:relative;z-index:1;max-width:820px">
-    <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="/">Start</a> <span>›</span> <span>${esc(crumbLabel)}</span></nav>
+    <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="/">Start</a> <span>›</span> <a href="${crumbHref}">${esc(crumbLabel)}</a> <span>›</span> <span>${esc(crumbLeaf)}</span></nav>
     <h1 class="reveal" style="margin-top:10px">${esc(p.h1)}</h1>
     <div class="lead reveal">${p.introHtml}</div>
     <div class="hero-cta reveal">
