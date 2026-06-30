@@ -299,6 +299,16 @@ html[lang="fa"] .select{ background-position:left 12px center; padding-inline-en
 .footer-row{ display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; align-items:center; }
 .footer-links{ display:flex; flex-wrap:wrap; gap:18px; }
 .footer-links a:hover{ color:var(--brand-700); }
+.footer-cols{ display:grid; gap:26px 32px; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); padding-bottom:28px; margin-bottom:22px; border-bottom:1px solid var(--ink-100); }
+.foot-col h4{ font-family:var(--font); font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-700); margin:0 0 12px; }
+html[lang="fa"] .foot-col h4{ letter-spacing:0; text-transform:none; }
+.foot-col a, .foot-col span{ display:block; font-size:.88rem; color:var(--ink-500); padding:3px 0; }
+.foot-col a:hover{ color:var(--brand-700); }
+.foot-tag{ font-size:.86rem; color:var(--ink-500); margin:12px 0 0; max-width:30ch; }
+.foot-contact{ display:flex; gap:10px; margin-top:14px; }
+.foot-contact a{ width:38px; height:38px; border-radius:10px; display:grid; place-items:center; background:var(--ink-50); border:1px solid var(--ink-100); color:var(--ink-600); }
+.foot-contact a:hover{ background:var(--brand-50); color:var(--brand-700); border-color:var(--brand-100); }
+.foot-contact svg{ width:19px; height:19px; }
 
 /* ---------- i18n visibility ----------
    Hide only the NON-active language variants (with !important so it beats

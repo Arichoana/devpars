@@ -42,26 +42,26 @@ const META = {
 
 const FAQ = {
   de: [
-    ['Was kostet eine Website?', 'Einfache Websites starten bei ca. 690 € (Onepager), mehrseitige Business-Websites ab 1.690 € – immer als transparenter Festpreis, kein Abo. Den genauen Preis nenne ich nach einem kurzen, kostenlosen Gespräch.'],
+    ['Was kostet eine Website?', 'Einfache Websites starten bei 390 € (Express, 1 Seite), mehrseitige Business-Websites ab 790 € – immer als transparenter Festpreis, kein Abo. Den genauen Preis nenne ich nach einem kurzen, kostenlosen Gespräch.'],
     ['Arbeiten Sie deutschlandweit und remote?', 'Ja, zu 100 % remote – egal wo in Deutschland Sie sind. Persönliche Termine im Raum Essen/Ruhrgebiet sind ebenfalls möglich.'],
     ['Sprechen Sie Deutsch und Persisch?', 'Ja – Deutsch, Englisch und Persisch (Farsi). Ich betreue auch persischsprachige Kundinnen und Kunden und baue zweisprachige Websites mit korrektem RTL.'],
-    ['Festpreis oder Stundensatz?', 'Websites zum Festpreis – Sie wissen vorher genau, was es kostet. Individuelle Software läuft optional über einen fairen Stundensatz (89 €/Std.) oder über Festpreis-Pakete.'],
+    ['Festpreis oder Stundensatz?', 'Websites zum Festpreis – Sie wissen vorher genau, was es kostet. Individuelle Software läuft optional über einen fairen Stundensatz (79 €/Std.) oder über Festpreis-Pakete.'],
     ['Sind die Websites DSGVO-konform?', 'Ja. Jede Website kommt rechtssicher mit Impressum, Datenschutzerklärung, Cookie-Banner und – auf Wunsch – Hosting auf deutschen Servern.'],
     ['Wie lange dauert ein Projekt?', 'Ein Onepager ist oft in wenigen Tagen online, eine Business-Website meist in 1–3 Wochen – abhängig vom Umfang und davon, wie schnell die Inhalte vorliegen.'],
   ],
   en: [
-    ['What does a website cost?', 'Simple websites start around €690 (one-pager), multi-page business sites from €1,690 – always a transparent fixed price, no subscription. I give you the exact price after a short, free call.'],
+    ['What does a website cost?', 'Simple websites start at €390 (Express, 1 page), multi-page business sites from €790 – always a transparent fixed price, no subscription. I give you the exact price after a short, free call.'],
     ['Do you work remotely across Germany?', 'Yes, 100% remote – wherever you are in Germany. In-person meetings in the Essen/Ruhr area are also possible.'],
     ['Do you speak German and Persian?', 'Yes – German, English and Persian (Farsi). I also serve Persian-speaking clients and build bilingual websites with proper right-to-left (RTL) support.'],
-    ['Fixed price or hourly rate?', 'Websites at a fixed price – you know the cost upfront. Custom software optionally runs on a fair hourly rate (€89/h) or fixed-price packages.'],
+    ['Fixed price or hourly rate?', 'Websites at a fixed price – you know the cost upfront. Custom software optionally runs on a fair hourly rate (€79/h) or fixed-price packages.'],
     ['Are the websites GDPR-compliant?', 'Yes. Every website ships legally compliant with an imprint, privacy policy, cookie banner and – on request – hosting on German servers.'],
     ['How long does a project take?', 'A one-pager is often live in a few days, a business website usually in 1–3 weeks – depending on scope and how quickly the content is ready.'],
   ],
   fa: [
-    ['هزینه‌ی یک وب‌سایت چقدر است؟', 'وب‌سایت‌های ساده از حدودِ ۶۹۰€ (تک‌صفحه) و سایت‌های چندصفحه‌ایِ کسب‌وکار از ۱۶۹۰€ شروع می‌شوند — همیشه قیمتِ ثابت و شفاف، بدونِ اشتراک. قیمتِ دقیق را بعد از یک گفت‌وگوی کوتاهِ رایگان می‌گویم.'],
+    ['هزینه‌ی یک وب‌سایت چقدر است؟', 'وب‌سایت‌های ساده از ۳۹۰€ (اکسپرس، تک‌صفحه) و سایت‌های چندصفحه‌ایِ کسب‌وکار از ۷۹۰€ شروع می‌شوند — همیشه قیمتِ ثابت و شفاف، بدونِ اشتراک. قیمتِ دقیق را بعد از یک گفت‌وگوی کوتاهِ رایگان می‌گویم.'],
     ['آیا ریموت و در سراسر آلمان کار می‌کنید؟', 'بله، ۱۰۰٪ ریموت — هر جای آلمان که باشید. جلسه‌ی حضوری در منطقه‌ی اِسن/روهر هم ممکن است.'],
     ['آلمانی و فارسی صحبت می‌کنید؟', 'بله — آلمانی، انگلیسی و فارسی. مشتریانِ فارسی‌زبان را هم پشتیبانی می‌کنم و وب‌سایتِ دوزبانه با راست‌به‌چپِ (RTL) درست می‌سازم.'],
-    ['قیمتِ ثابت یا ساعتی؟', 'وب‌سایت‌ها قیمتِ ثابت دارند — از قبل دقیق می‌دانید چقدر می‌شود. نرم‌افزارِ سفارشی به‌صورتِ اختیاری با نرخِ منصفانه‌ی ساعتی (۸۹€) یا پکیجِ ثابت انجام می‌شود.'],
+    ['قیمتِ ثابت یا ساعتی؟', 'وب‌سایت‌ها قیمتِ ثابت دارند — از قبل دقیق می‌دانید چقدر می‌شود. نرم‌افزارِ سفارشی به‌صورتِ اختیاری با نرخِ منصفانه‌ی ساعتی (۷۹€) یا پکیجِ ثابت انجام می‌شود.'],
     ['آیا سایت‌ها منطبق با DSGVO هستند؟', 'بله. هر وب‌سایت با Impressum، سیاستِ حریمِ خصوصی، بنرِ کوکی و — در صورتِ تمایل — هاست روی سرورهای آلمان تحویل می‌شود.'],
     ['یک پروژه چقدر طول می‌کشد؟', 'یک تک‌صفحه اغلب در چند روز آنلاین می‌شود، یک سایتِ کسب‌وکار معمولاً ۱ تا ۳ هفته — بسته به حجمِ کار و سرعتِ آماده‌شدنِ محتوا.'],
   ],
