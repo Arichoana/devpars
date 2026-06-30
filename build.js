@@ -243,6 +243,11 @@ function build(lang) {
   // 4) fix relative asset/link paths for depth BEFORE injecting absolute head tags
   rewriteRelative($, cfg.depth);
 
+  // 4b) language-aware LCP-font preload: the fa page renders its hero in Vazirmatn,
+  // de/en in Inter — preload the font the largest-contentful element actually uses.
+  const lcpFont = lang === 'fa' ? 'vazirmatn-arabic.woff2' : 'inter-latin.woff2';
+  $('link[rel="preload"][as="font"]').attr('href', '../'.repeat(cfg.depth) + 'assets/fonts/' + lcpFont);
+
   // 5) inject SEO head: canonical, hreflang cluster, OG extras, JSON-LD
   const head = $('head');
   const abs = BASE + cfg.urlPath;
