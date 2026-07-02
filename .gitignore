@@ -36,3 +36,6 @@ card/*
 !card/work-plumber.png
 
 LAUNCH-PACK.md
+
+# private analytics worker (deployed separately via wrangler, not part of the public site)
+stats-worker/
