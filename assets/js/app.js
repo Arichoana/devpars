@@ -83,3 +83,20 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
   else start();
 })();
+
+/* Reichweitenmessung: cookielos, ohne IP-/User-Agent-Speicherung (siehe Datenschutz) */
+(function () {
+  try {
+    if (location.hostname !== 'devpars.de' && location.hostname !== 'www.devpars.de') return;
+    var payload = {
+      p: location.pathname + location.search,
+      r: document.referrer || '',
+      l: document.documentElement.lang || ''
+    };
+    var url = 'https://devpars-stats.arichoana.workers.dev/hit';
+    var body = JSON.stringify(payload);
+    var sent = false;
+    if (navigator.sendBeacon) sent = navigator.sendBeacon(url, body);
+    if (!sent) fetch(url, { method: 'POST', body: body, keepalive: true, headers: { 'content-type': 'text/plain' } }).catch(function () {});
+  } catch (e) { /* never break the page */ }
+})();
