@@ -88,6 +88,7 @@
 (function () {
   try {
     if (location.hostname !== 'devpars.de' && location.hostname !== 'www.devpars.de') return;
+    if (window.__pageNotFound) return; // 404 page — scanner probes must not count
     var payload = {
       p: location.pathname + location.search,
       r: document.referrer || '',

@@ -303,6 +303,7 @@ ${header()}
   </div>
 </div></section></main>
 ${footer()}
+<script>window.__pageNotFound=1</script><!-- 404s must not count as visits (scanner noise) -->
 <script src="/assets/js/app.js"></script>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body></html>`;
